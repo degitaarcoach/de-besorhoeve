@@ -80,7 +80,7 @@ dropdownLink.forEach(function (link, hovered) {
 });
 
 document.body.addEventListener("click", (e) => {
-  if (!e.path[0].classList.contains("nav-link-dropdown")) {
+  if (!e.target.classList.contains("nav-link-dropdown")) {
     dropdown.forEach((el) => {
       el.style.visibility = "hidden";
       el.style.transform = "unset";
