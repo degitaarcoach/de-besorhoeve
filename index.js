@@ -32,6 +32,11 @@ function menuFunc() {
     resizingOnBigScreen = false;
   }
 }
+
+if (window.innerWidth <= 900) {
+  hideMenu();
+  resizingOnBigScreen = false;
+}
 // --------------
 
 function dropdownOneFunc() {
