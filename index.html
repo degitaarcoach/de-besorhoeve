@@ -24,7 +24,7 @@
       </div>
     </div>
     <nav class="show">
-      <ul>
+      <ul class="nav-list">
         <li><a class="nav-link nav-link_active" href="#">Home</a></li>
         <!-- dropdown -->
         <li>
@@ -63,44 +63,48 @@
     <!--////////////////// HEADER //////////////////-->
     <!------------------------------------------------>
     <header>
-      <div class="top-header">
+      <div class="header-top-layer">
         <img class="logo" src="images/logo.jpg" alt="Logo van de Besorhoeve" />
         <div class="header-text-container">
           <h1 class="header-title">De Besorhoeve</h1>
           <h2 class="header-subtitle">Beschermd wonen & Herstel</h2>
         </div>
       </div>
-      <div class="bottom-header">
-        <!-- LINE -->
-        <svg class="header-line"  xmlns="http://www.w3.org/2000/svg" >
-          <path d="M -1 1 C 500 200, 1160 250, 1237 -1" stroke="#efffff" stroke-width="2px" fill="transparent" />
-        </svg>
+
+      <div class="header-svg-layer">
         <!-- WAVE -->
         <div class="header-wave">
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none">
             <path
             d="M-0.27,79.44 C127.82,148.52 457.95,178.13 500.84,96.20 L500.00,0.00 L0.00,0.00 Z"
-            style="stroke: none; fill: #80cee5"
-          ></path>
-        </svg>
-
+            style="stroke: none; fill: #80cee5">
+            </path>
+          </svg>
+        </div>
+         <!-- LINE -->
+         <div class="header-line">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+              <path
+              d="M-0.27,40.44 C147.82,128.52 440.95,188.13 500.84,60.44"
+              stroke="#efffff" stroke-width="1px" fill="transparent" />
+         </div>
       </div>
       <!-- IMAGE -->
       <img class="header-image" src="images/1607.jpg" alt="" />
-    </div>
+
     </header>
     <!------------------------------------------------>
     <!--/////////////////// BLOB ///////////////////-->
     <!------------------------------------------------>
-      <div class="blob">
+      <div class="blob-container">
         <div class="blob-text">
           <h2>Rust</h2>
           <h2>Ruimte</h2>
           <h2>Zorg</h2>
         </div>
 
-        <!-- Blob box -->
-        <svg viewBox="0 0 200 200" height="475px" xmlns="http://www.w3.org/2000/svg">
+        <!-- Blob SVG -->
+        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="#245779"
             d="M54.3,-54.3C68.4,-40.1,76.6,-20.1,77.4,0.7C78.1,21.5,71.3,43.1,57.2,59.3C43.1,75.6,21.5,86.5,-0.9,87.4C-23.3,88.3,-46.6,79.2,-56.8,62.9C-67,46.6,-64.1,23.3,-60.5,3.6C-56.9,-16.1,-52.6,-32.2,-42.4,-46.4C-32.2,-60.6,-16.1,-72.8,2,-74.8C20.1,-76.7,40.1,-68.5,54.3,-54.3Z"
@@ -108,7 +112,7 @@
           />
         </svg>
         <!-- Blob line -->
-        <svg class="blob-line" viewBox="0 0 200 200" height="475px" xmlns="http://www.w3.org/2000/svg">
+        <svg class="blob-line" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path
             stroke="#80cee5"
             fill="transparent"
@@ -118,12 +122,13 @@
           />
         </svg>
       </div>
-    </div>
+
     <!------------------------------------------------>
     <!--/////////////////// MAIN ///////////////////-->
     <!------------------------------------------------>
 
-    <main class="top-section">
+    <main>
+      <section class="top-section">
       <div class="top-wave-container">
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="top-wave">
           <path
@@ -135,18 +140,20 @@
       <div class="top-text-box">
         <h4>Rust & Herstel</h4>
         <p>
-          In een omgeving van rust en ruimte bieden wij zorg aan (jong)volwassenen die begeleiding nodig hebben naar
+          In een omgeving van rust en ruimte bieden wij zorg aan (jong-) volwassenen die begeleiding nodig hebben naar
           zelfstandig wonen.
         </p>
         <br />
         <p>
-          Ook bieden wij een plek aan <br />
-          mensen die tijdelijk rust zoeken en <br />
+          Ook bieden wij een plek aan 
+          mensen die tijdelijk rust zoeken en
           herstel nodig hebben
         </p>
       </div>
-    </main>
+    </section>
+
     <section class="bottom-section">
+      <div class="bottom-text-container">
       <p class="bottom-text">
         Wij geloven dat ieder mens <strong>waardevol</strong> en <strong>uniek</strong> is. <br />
         Ieder mens is mooi, ongeacht wat iemand wel of niet kan of het gedrag wat hij of zij laat zien.
@@ -155,9 +162,11 @@
         Wij geloven dat ieder mens <strong>geborgenheid, liefde</strong> en <strong>erkenning</strong> nodig heeft en
         dat ieder mens mag zijn wie hij of zij is!
       </p>
+    </div>
       <a class="btn read-more-btn" href="#">Meer over ons</a>
     </section>
-
+    <div class="extra-height"></div>
+  </main>
     <!------------------------------------------------>
     <!--////////////////// FOOTER //////////////////-->
     <!------------------------------------------------>
