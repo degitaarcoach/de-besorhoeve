@@ -163,7 +163,8 @@ p.nav-link:hover {
 .dropdown a:hover {
   opacity: 0.5;
 }
-.nav-list li:hover ul.dropdown {
+.nav-list li:hover ul.dropdown,
+.nav-list li:active ul.dropdown {
   opacity: 1;
   transform: translateY(0);
   visibility: unset;
