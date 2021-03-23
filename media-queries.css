@@ -241,7 +241,7 @@
   .dropdown li:first-child {
     padding-top: 1em;
   }
-  ul li:active ul.dropdown ul li:hover ul.dropdown,
+  ul li:hover ul.dropdown,
   ul li:focus ul.dropdown {
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
