@@ -117,7 +117,7 @@ nav {
   transition: all 0.2s;
   position: relative;
 }
-.nav-link:not(p)::before {
+.nav-link:not(.nav-link-dropdown)::before {
   content: "";
   position: absolute;
   height: 2px;
@@ -152,7 +152,7 @@ nav {
 .dropdown li {
   padding-top: 1em;
 }
-p.nav-link:hover {
+.nav-link-dropdown .nav-link:hover {
   cursor: default;
 }
 .dropdown a {
