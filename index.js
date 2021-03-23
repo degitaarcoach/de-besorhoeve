@@ -83,17 +83,3 @@ document.body.addEventListener("click", (e) => {
     });
   }
 });
-
-document.body.addEventListener("mouseover", (e) => {
-  if (
-    !e.path[0].classList.contains("nav-link-dropdown") &&
-    !e.path[2].classList.contains("drop-item") &&
-    !e.path[2].classList.contains("dropdown")
-  ) {
-    dropdown.forEach((el) => {
-      el.style.visibility = "hidden";
-      el.style.transform = "unset";
-      el.style.opacity = "0";
-    });
-  }
-});
