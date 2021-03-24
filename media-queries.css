@@ -75,15 +75,16 @@
     display: unset;
   }
   .dropdown {
-    width: 75%;
+    width: fit-content;
     border-bottom-right-radius: 80px;
     border-bottom-left-radius: 40px;
     border-top-right-radius: 40px;
     margin-top: -2.32em;
-    margin-left: 6em;
+    margin-left: 7.5em;
   }
   .dropdown li {
     padding-top: 0.2em;
+    padding-right: 2em;
   }
   .show {
     opacity: 0.95;
@@ -240,6 +241,9 @@
   }
   .dropdown li:first-child {
     padding-top: 1em;
+  }
+  .dropdown li {
+    padding-right: unset;
   }
   ul li:hover ul.dropdown,
   ul li:focus ul.dropdown {
