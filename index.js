@@ -39,43 +39,29 @@ if (window.innerWidth <= 900) {
 }
 // --------------
 
-function dropdownOneFunc() {
-  dropdown[0].style.visibility = "unset";
-  dropdown[0].style.transform = "translateY(0)";
-  dropdown[0].style.opacity = "1";
-  dropdown[1].style.visibility = "hidden";
-  dropdown[1].style.transform = "unset";
-  dropdown[1].style.opacity = "0";
+function dropdownFunc(index) {
+  let a = 0;
+  let b = 1;
+  if (index === 1) {
+    a = 1;
+    b = 0;
+  }
+  dropdown[a].style.visibility = "unset";
+  dropdown[a].style.transform = "translateY(0)";
+  dropdown[a].style.opacity = "1";
+  dropdown[b].style.visibility = "hidden";
+  dropdown[b].style.transform = "unset";
+  dropdown[b].style.opacity = "0";
 }
 
-function dropdownTwoFunc() {
-  dropdown[1].style.visibility = "unset";
-  dropdown[1].style.transform = "translateY(0)";
-  dropdown[1].style.opacity = "1";
-  dropdown[0].style.visibility = "hidden";
-  dropdown[0].style.transform = "unset";
-  dropdown[0].style.opacity = "0";
-}
-
-dropdownLink.forEach(function (link, clicked) {
+dropdownLink.forEach(function (link, i) {
   link.addEventListener("click", () => {
-    if (clicked === 0) {
-      dropdownOneFunc();
-    }
-    if (clicked === 1) {
-      dropdownTwoFunc();
-    }
+    dropdownFunc(i);
   });
 });
-
-dropdownLink.forEach(function (link, hovered) {
+dropdownLink.forEach(function (link, i) {
   link.addEventListener("mouseover", () => {
-    if (hovered === 0) {
-      dropdownOneFunc();
-    }
-    if (hovered === 1) {
-      dropdownTwoFunc();
-    }
+    dropdownFunc(i);
   });
 });
 
